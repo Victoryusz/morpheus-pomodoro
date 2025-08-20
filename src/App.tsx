@@ -1,10 +1,20 @@
-import './styles/theme.css'  
-import './styles/global.css'  
+import { Heading } from './components/Heading';
+
+import './styles/theme.css';
+import './styles/global.css';
+import { DraftingCompass, TimerIcon } from 'lucide-react';
+import { Container } from './components/container';
 
 export function App() {
-    console.log("Oi");
+  return (
+    <>
+      <Container>
+        <Heading>LOGO</Heading>
+      </Container>
 
-    return (
-        <h1> Hello world</h1>
-    );
+      <Container>
+        <Heading>COMPONENTE</Heading>
+      </Container>
+    </>
+  );
 }
