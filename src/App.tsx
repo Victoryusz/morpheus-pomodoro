@@ -1,10 +1,12 @@
 import { Container } from './components/Container/index';
-import { Logo } from './components/Logo/index.';
+import { Logo } from './components/Logo/index';
 import { Menu } from './components/Menu/index.';
 
 import './styles/theme.css';
 import './styles/global.css';
 import { CountDown } from './components/CountDown/index.';
+import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
 
 export function App() {
   return (
@@ -24,8 +26,12 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='meuInput'>Task</label>
-            <input id='meuInput' type='text' />
+            <DefaultInput
+              labelText='task'
+              id='meuInput'
+              type='text'
+              placeholder='Digite algo'
+            />
           </div>
 
           <div className='formRow'>
@@ -33,8 +39,7 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0</p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
