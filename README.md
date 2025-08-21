@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# ⏳ Pomodoro Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo web simples e funcional baseado na **Técnica Pomodoro**,
+desenvolvido com **Vite + React + TypeScript**, como parte dos estudos do curso
+de **React e Next.js**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ **Vite** – Build rápido e moderno
+- ⚛️ **React** – Biblioteca para criação de interfaces
+- 🟦 **TypeScript** – Tipagem estática para maior segurança no código
 
-## Expanding the ESLint configuration
+## 🎯 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Definição de ciclos de foco (25 min) e descanso (5 min)
+- ⏱️ Contagem regressiva em tempo real
+- 🔊 Alerta sonoro ao final do ciclo
+- 📱 Interface simples e responsiva
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Como executar o projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+```bash
+# Clone o repositório
+git clone https://github.com/Victoryusz/morpheus-pomodoro.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Entre no diretório
+cd morpheus-pomodoro
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📝 Aprendizados
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este projeto foi desenvolvido para praticar conceitos fundamentais do React,
+como:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Gerenciamento de estado com `useState`
+- Efeitos colaterais com `useEffect`
+- Manipulação de timers em JavaScript
+- Componentização e reutilização de código
+
+## 🎓 Sobre o projeto
+
+Desenvolvido como parte dos estudos em **Análise e Desenvolvimento de
+Sistemas**, aplicando a metodologia de aprendizado ativo para consolidar
+conhecimentos em React e TypeScript.
