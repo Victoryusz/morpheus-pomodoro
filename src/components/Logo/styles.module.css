@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 10rem;
+}
+
+/*Configuração do ICON*/
+.logoLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 1rem;
+  font-size: 4.2rem;
+  text-decoration: none;
+  color: var(--primary);
+  transition: all 0.3s;
+}
+
+.logoLink:hover {
+  filter: brightness(70%);
+}
+
+/*Configuração do ICON*/
+.logoLink svg {
+  width: 6.4rem;
+  height: 6.4rem;
+}
