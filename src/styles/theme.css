@@ -1,37 +1,44 @@
 :root {
-  --gray-100: #e6e9f0;
-  --gray-200: #cdd3e1;
-  --gray-300: #aab3cc;
-  --gray-400: #555f7d;
-  --gray-500: #454f6a;
-  --gray-600: #363d56;
-  --gray-700: #272f43;
-  --gray-800: #181f2e;
-  --gray-900: #0a0f1a;
+  /* Escala de cinza/esverdeado futurista */
+  --gray-100: #e0f9e6;
+  --gray-200: #b8e6c2;
+  --gray-300: #8ab894;
+  --gray-400: #5a8a63;
+  --gray-500: #406a47;
+  --gray-600: #2e5434;
+  --gray-700: #213f26;
+  --gray-800: #151f19;
+  --gray-900: #0a0f0a;
 
-  --primary-light: #4de7b7;
-  --primary: #0da170;
-  --primary-dark: #065f46;
+  /* Verde neon futurista */
+  --primary-light: #39ff14; /* verde neon fosforescente */
+  --primary: #00cc44; /* verde elétrico */
+  --primary-dark: #006622; /* verde profundo */
 
-  --link-color: #10b981;
-  --link-hover: #0b8a60;
+  /* Links puxando para verde neon */
+  --link-color: #00ff88;
+  --link-hover: #00cc66;
 
-  --success: #22c55e;
-  --warning: #eab308;
-  --error: #991b1b;
-  --info: #0ea5e9;
+  /* Estados em tons vibrantes */
+  --success: #39ff14; /* verde neon */
+  --warning: #ffee00; /* amarelo forte */
+  --error: #ff3355; /* vermelho neon */
+  --info: #00ffaa; /* verde-ciano neon */
 
-  --text-over-primary: #0a0f1a;
-  --text-over-primary-dark: #e6e9f0;
-  --text-over-primary-light: #0a0f1a;
-  --text-over-success: #0a0f1a;
-  --text-over-warning: #0a0f1a;
-  --text-over-error: #e6e9f0;
-  --text-over-info: #0a0f1a;
+  /* Texto sobre elementos */
+  --text-over-primary: #0a0f0a;
+  --text-over-primary-dark: #e0f9e6;
+  --text-over-primary-light: #0a0f0a;
+  --text-over-success: #0a0f0a;
+  --text-over-warning: #0a0f0a;
+  --text-over-error: #e0f9e6;
+  --text-over-info: #0a0f0a;
 
-  --text-default: #e6e9f0;
-  --text-muted: #aab3cc;
+  /* Texto */
+  --text-default: #e0f9e6;
+  --text-muted: #8ab894;
 
-  --disabled: #555f7d;
-  --text-disabled: #aab3cc;
+  /* Disabled */
+  --disabled: #406a47;
+  --text-disabled: #8ab894;
 }
