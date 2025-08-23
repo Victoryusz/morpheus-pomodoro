@@ -1,9 +1,9 @@
 import styles from './styles.module.css';
 
-type MenuProps = {
+type HeadingProps = {
   children: React.ReactNode;
 };
 
-export function Menu({ children }: MenuProps) {
-  return <h1 className={styles.menu}>{children}</h1>;
+export function Heading({ children }: HeadingProps) {
+  return <h1 className={styles.heading}>{children}</h1>;
 }
