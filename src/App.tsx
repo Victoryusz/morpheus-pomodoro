@@ -1,59 +1,7 @@
-import { Container } from './components/Container/index';
-import { Logo } from './components/Logo/index';
-import { Menu } from './components/Menu/index.';
-
 import './styles/theme.css';
 import './styles/global.css';
-import { CountDown } from './components/CountDown/index.';
-import { DefaultInput } from './components/DefaultInput';
-import { Cycles } from './components/Cycles';
-import { DefaultButton } from './components/DefaultButton';
-import { PlayCircleIcon } from 'lucide-react';
-import { Footer } from './components/Footer/index.';
+import { Home } from './pages/Home';
 
 export function App() {
-  return (
-    <>
-      <Container>
-        <Logo />
-      </Container>
-
-      <Container>
-        <Menu />
-      </Container>
-
-      <Container>
-        <CountDown />
-      </Container>
-
-      <Container>
-        <form className='form' action=''>
-          <div className='formRow'>
-            <DefaultInput
-              labelText={'Task'}
-              id='meuInput'
-              type='text'
-              placeholder='Digite algo'
-            />
-          </div>
-
-          <div className='formRow'>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-
-          <div className='formRow'>
-            <Cycles />
-          </div>
-
-          <div className='formRow'>
-            <DefaultButton icon={<PlayCircleIcon />} color='green' />
-          </div>
-        </form>
-      </Container>
-
-      <Container>
-        <Footer />
-      </Container>
-    </>
-  );
+  return <Home />;
 }
