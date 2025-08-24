@@ -2,7 +2,7 @@
   /* Escala de cinza/esverdeado futurista */
   --gray-100: #e0f9e6;
   --gray-200: #b8e6c2;
-  --gray-300: #8ab894;
+  --gray-300: #8ab894
   --gray-400: #5a8a63;
   --gray-500: #406a47;
   --gray-600: #2e5434;
@@ -41,4 +41,41 @@
   /* Disabled */
   --disabled: #406a47;
   --text-disabled: #8ab894;
+}
+
+:root[data-theme='light'] {
+  --gray-100: #ffffff;  /* quase branco, base do fundo */
+  --gray-200: #f3fbf5;  /* leve tom esverdeado */
+  --gray-300: #dff5e6;  /* verde muito suave */
+  --gray-400: #c2e7cb;  /* verde claro */
+  --gray-500: #afafaf;  /* verde médio (DIGITE ALGO)*/ 
+  --gray-600: #75b88b;  /* verde mais presente */
+  --gray-700: #4f9368;  /* verde escuro suave */
+  --gray-800: #2e6a44;  /* verde forte */
+  --gray-900: #ffffff;  /* verde profundo, usado em textos de destaque */
+
+
+  /* Verde neon futurista */
+  --primary-light: #000000; /* verde neon fosforescente */
+  --primary: #000000; /* verde elétrico */
+  
+
+   /* Texto */
+   --text-default: #000000;
+   --text-muted: #474747;
+
+   /* Texto sobre elementos */
+  --text-over-primary: #ffffff;
+  --text-over-primary-dark: #e0f9e6;
+  --text-over-primary-light: #0a0f0a;
+  --text-over-success: #0a0f0a;
+  --text-over-warning: #0a0f0a;
+  --text-over-error: #e0f9e6;
+  --text-over-info: #0a0f0a;
+
+  /* Estados em tons vibrantes */
+  --success: #39ff14; /* verde neon */
+  --warning: #ff4800; /* amarelo forte (worktime) */
+  --info: #7bff00; /* verde-ciano neon (longBreakTime)*/
+
 }
